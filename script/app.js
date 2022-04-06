@@ -2,7 +2,7 @@
 const slider = document.querySelector(".slider");
 
 const mySlider = new Slider(slider, {
-  autoplay: false,
+  autoplay: true,
   loop: true,
   width: 1200,
   height: 625,
