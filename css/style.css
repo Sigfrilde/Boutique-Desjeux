@@ -1,0 +1,68 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Slider */
+
+.slider {
+    position: relative;
+    margin: auto;
+  }
+  
+  .slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .slider .arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-50%);
+    cursor: pointer;
+    user-select: none;
+  }
+  .slider .arrow.prev {
+    top: 50%;
+    left: 15px;
+    color: red;
+  }
+  
+  .slider .arrow.next {
+    top: 50%;
+    right: 15px;
+    color: red;
+  }
+
+  /* End of slider */
