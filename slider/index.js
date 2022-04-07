@@ -9,7 +9,7 @@ class Slider {
       this.width = 650;
       this.height = 425;
       this.currentSlide = 0;
-      this.interval = 10000;
+      this.interval = 5000;
       this.loop = false;
       this.autoplay = false;
   
