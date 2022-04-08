@@ -41,7 +41,7 @@
     height: 100%;
     object-fit: cover;
   }
-  /* .slider .arrow {
+  .slider .arrow {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,7 +63,7 @@
     top: 50%;
     right: 15px;
     color: red;
-  } */
+  }
 
   /* End of slider */
 
