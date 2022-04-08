@@ -1,10 +1,12 @@
 <?php
 
-echo('coucou');
+echo "Bonjour tout le monde !";
 
 
 
 
 
 
-require 'homepage.html';
+
+
+
