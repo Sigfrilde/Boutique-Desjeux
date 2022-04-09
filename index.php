@@ -1,5 +1,10 @@
 <?php
-
+// Permet de savoir s'il y a une session. 
+// C'est-à-dire si un utilisateur s'est connecté à votre site 
+  session_start(); 
+  
+  // Fichier PHP contenant la connexion à votre BDD
+  include('bd/connexionBD.php'); 
 ?>
 
 
@@ -21,12 +26,12 @@
 </head>
 
 <body>
-    <nav>
-        <a href="homepage.html">Accueil</a>
-        <a href="">Inscription</a>
-        <a href="">Contact</a>
-    </nav>
     <header>
+        <nav>
+            <a href="index.php">Accueil</a>
+            <a href="inscription.php">Inscription</a>
+            <a href="">Contact</a>
+        </nav>
         <img src="images/DESJEUX.png" alt="Logo DESJEUX">
     </header>
     <div class="slider">
