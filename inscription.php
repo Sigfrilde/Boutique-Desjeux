@@ -100,11 +100,9 @@ exit;
 </head>
 
 <body>
-    <div>Inscription</div>
-
     <header>
         <nav>
-            <a href="index.php">Accueil</a>
+            <a href="homepage.html">Accueil</a>
             <a href="inscription.php">Inscription</a>
             <a href="">Contact</a>
         </nav>

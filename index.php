@@ -4,9 +4,9 @@
   session_start(); 
   
   // Fichier PHP contenant la connexion à votre BDD
-  include('bd/connexionBD.php'); 
+  include('bd/connexionBD.php');
+  include('homepage.html') 
 ?>
-
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -25,77 +25,32 @@
     <title>Boutique Désjeux</title>
 </head>
 
+
 <body>
+
+
+
+    <?php
+ if(!isset($_SESSION['id'])){ // Si on ne détecte pas de session alors on verra les liens ci-dessous
+?>
     <header>
         <nav>
-            <a href="index.php">Accueil</a>
+            <a href="homepage.html">Accueil</a>
             <a href="inscription.php">Inscription</a>
-            <a href="">Contact</a>
+            <a href="#">Contact</a>
         </nav>
         <img src="images/DESJEUX.png" alt="Logo DESJEUX">
     </header>
-    <div class="slider">
-        <img src="images/jeu-société.jpg" alt="">
-        <img src="images/jeuxmaison.jpg" alt="">
-        <img src="images/jeux.jpg" alt="">
-    </div>
-    <div>
-        <nav>
-            <ul>
-                <li>Jeux de cartes à collectioner</li>
-                <li>Jeux de société</li>
-                <li>Figurines</li>
-            </ul>
-        </nav>
-    </div>
-    <div>
-        <article>
-            <h3>Nouveauté</h3>
-            <p></p>
-        </article>
-        <article>
-            <h3>Coup de coeur</h3>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-        </article>
-        <article>
-            <h3>Top vente</h3>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-        </article>
-    </div>
+    <?php
+}else{ // Sinon s'il y a une session alors on verra les liens ci-dessous
+?>
+    <a href="profil.php">Mon profil</a>
+    <a href="modifier-profil.php">Modifier mon profil</a>
+    <a href="deconnexion.php">Déconnexion</a>
+    <?php
+ }
+ ?>
 
-    <div>
-        <h2>Découvrir le concept Désjeux</h2>
-        <article>
-            <h3>Jeux d'occasion</h3>
-        </article>
-        <article>
-            <h3>Location de jeux</h3>
-        </article>
-    </div>
-
-    <footer>
-        <div>
-            <img src="images/DESJEUX.png" alt="Logo DESJEUX">
-            <p><a href="">CGV</a></p>
-            <p><a href="">qui sommes nous ?</a></p>
-            <p><a href="">Mentions Légales</a></p>
-        </div>
-        <div>
-            <h4>Pour nous suivre</h4>
-            <a href=""><span class="iconify" data-icon="ri:facebook-box-fill" data-inline="false"></span></a>
-            <a href=""><span class="iconify" data-icon="mdi:instagram" data-inline="false"></span></a>
-            <a href=""><span class="iconify" data-icon="logos:tiktok" data-inline="false"></span></a>
-        </div>
-
-    </footer>
-
-
-    <script src="slider/slider.js"></script>
-    <script src="script/app.js"></script>
 </body>
 
 </html>
