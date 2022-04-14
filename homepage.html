@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="Description"
@@ -14,32 +13,46 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Boutique Désjeux</title>
 </head>
-
 <body>
-    <header>
-        <nav>
+    <header class="header wrapper">
+        <nav class="main-menu">
             <a href="homepage.html">Accueil</a>
             <a href="#">Inscription</a>
             <a href="">Contact</a>
         </nav>
-        <img src="images/DESJEUX.png" alt="Logo DESJEUX">
+        <img class="logo" src="images/DESJEUX.png" alt="Logo DESJEUX">
     </header>
-    <div class="slider">
+    <div class="slider wrapper">
         <img src="images/jeu-société.jpg" alt="">
         <img src="images/jeuxmaison.jpg" alt="">
         <img src="images/jeux.jpg" alt="">
     </div>
-    <div>
-        <nav>
-            <ul>
-                <li>Jeux de cartes à collectioner</li>
-                <li>Jeux de société</li>
+    <div class="wrapper">
+        <nav class="second-nav">
+            <ul class="menu">
+                <li>Jeux de cartes à collectioner
+                    <ul class="submenu">
+                        <li>Pokémon</li>
+                        <li>Yu-GI-OH!</li>
+                        <li>7Fallen</li>
+                    </ul>
+                </li>
+                <li>Jeux de société
+                    <ul class="submenu">
+                        <li>Jeu à 2</li>
+                        <li>Jeu coopératif</li>
+                        <li>Jeu de rôle</li>
+                        <li>Jeu de plateau</li>
+                        <li>Jeu de stratégie</li>
+                        <li>Jeu d'enquête</li>
+                    </ul>
+                </li>
                 <li>Figurines</li>
             </ul>
         </nav>
     </div>
-    <div>
-        <article>
+    <div class="wrapper main-article">
+        <article class="article">
             <h3>Nouveauté</h3>
             <p></p>
         </article>
@@ -56,7 +69,6 @@
             <img src="" alt="">
         </article>
     </div>
-
     <div>
         <h2>Découvrir le concept Désjeux</h2>
         <article>
@@ -66,7 +78,6 @@
             <h3>Location de jeux</h3>
         </article>
     </div>
-
     <footer>
         <div>
             <img src="images/DESJEUX.png" alt="Logo DESJEUX">
@@ -80,12 +91,8 @@
             <a href=""><span class="iconify" data-icon="mdi:instagram" data-inline="false"></span></a>
             <a href=""><span class="iconify" data-icon="logos:tiktok" data-inline="false"></span></a>
         </div>
-
     </footer>
-
-
     <script src="slider/slider.js"></script>
     <script src="script/app.js"></script>
 </body>
-
 </html>
