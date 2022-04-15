@@ -41,6 +41,7 @@
     height: 100%;
     object-fit: cover;
   }
+  /* !je vais enlever la partie css pour les fleches pour le projet de la boutique */
   .slider .arrow {
     display: flex;
     justify-content: center;

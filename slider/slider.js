@@ -55,7 +55,7 @@ class Slider {
       this.createPrevArrow();
       this.createNextArrow();
     }
-  
+  // ! je vais enlever les fléches pour le projet de la boutique
     createPrevArrow() {
       const divPrevArrow = document.createElement("div");
       divPrevArrow.innerText = "Prev";
