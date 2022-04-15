@@ -75,6 +75,7 @@ class Slider {
   
       this.wrapper.appendChild(divNextArrow);
     }
+    // !fin des creations de fleches
   
     prev = () => {
       const img = document.querySelector(".slider > img");
