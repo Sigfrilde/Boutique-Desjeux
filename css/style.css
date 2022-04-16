@@ -1,4 +1,4 @@
-/* ?Généraux */
+/* généraux */
 *{
   margin: 0;
   padding: 0;
@@ -15,6 +15,7 @@ li{
 }
 a{
   text-decoration: none;
+  color: #000000;
 }
 img{
   max-width: 100%;
