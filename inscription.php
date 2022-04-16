@@ -108,6 +108,7 @@ if (!empty($_POST)) {
                 <li><a href="homepage.html">Accueil</a></li>
                 <li><a href="inscription.php">Inscription</a></li>
                 <li><a href="motdepasse.php">Mot de passe oublié</a></li>
+
             </ul>
         </nav>
         <img class="logo" src="images/DESJEUX.png" alt="Logo DESJEUX">
@@ -117,6 +118,7 @@ if (!empty($_POST)) {
         <img src="images/jeuxmaison.jpg" alt="">
         <img src="images/jeux.jpg" alt="">
     </div>
+    <h2>Formulaire d'inscription</h2>
     <form class="form-inscription" method="post">
         <?php
         // S'il y a une erreur sur le nom alors on affiche

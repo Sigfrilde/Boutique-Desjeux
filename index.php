@@ -24,7 +24,7 @@ include('bd/connexionDB.php');
     ?>
         <a href="inscription.php">Inscription</a> <!-- Liens de nos futures pages -->
         <a href="connexion.php">Connexion</a>
-        
+
     <?php
     } else { // Sinon s'il y a une session alors on verra les liens ci-dessous
     ?>
@@ -32,8 +32,6 @@ include('bd/connexionDB.php');
         <a href="modifier-profil.php">Modifier mon profil</a>
         <a href="deconnexion.php">Déconnexion</a>
     <?php
-
-
     }
     ?>
 </body>
