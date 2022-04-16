@@ -1,8 +1,6 @@
 <?php
 session_start();
 include('bd/connexionDB.php'); // Fichier PHP contenant la connexion à votre BDD
-
-
 // S'il y a une session alors on ne retourne plus sur cette page
 if (isset($_SESSION['id'])) {
     header('Location: index.php');
@@ -86,68 +84,84 @@ if (!empty($_POST)) {
     }
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Inscription</title>
+    </head>
 
-<head>
-
-    <meta charset="utf-8">
-
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Inscription</title>
-
-</head>
-
-
-<body>
-    <div>Inscription</div>
-    <form method="post">
-        <?php
-        // S'il y a une erreur sur le nom alors on affiche
-        if (isset($er_nom)) {
-        ?>
-        <div><?= $er_nom ?></div>
-        <?php
-        }
-        ?>
-        <input type="text" placeholder="Votre nom" name="nom" value="<?php if (isset($nom)) {
-                                                                            echo $nom;
-                                                                        } ?>" required>
-        <?php
-        if (isset($er_prenom)) {
-        ?>
-        <div><?= $er_prenom ?></div>
-        <?php
-        }
-        ?>
-        <input type="text" placeholder="Votre prénom" name="prenom" value="<?php if (isset($prenom)) {
-                                                                                echo $prenom;
-                                                                            } ?>" required>
-        <?php
-        if (isset($er_mail)) {
-        ?>
-        <div><?= $er_mail ?></div>
-        <?php
-        }
-        ?>
-        <input type="email" placeholder="Adresse mail" name="mail" value="<?php if (isset($mail)) {
-                                                                                echo $mail;
-                                                                            } ?>" required>
-        <?php
-        if (isset($er_mdp)) {
-        ?>
-        <div><?= $er_mdp ?></div>
-        <?php
-        }
-        ?>
-        <input type="password" placeholder="Mot de passe" name="mdp" value="<?php if (isset($mdp)) {
-                                                                                echo $mdp;
-                                                                            } ?>" required>
-        <input type="password" placeholder="Confirmer le mot de passe" name="confmdp" required>
-        <button type="submit" name="inscription">Envoyer</button>
-    </form>
-</body>
+    <body>
+        <header class="header wrapper">
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="homepage.html">Accueil</a></li>
+                    <li><a href="inscription.php">Inscription</a></li>
+                </ul>
+            </nav>
+            <img class="logo" src="images/DESJEUX.png" alt="Logo DESJEUX">
+        </header>
+        <div class="slider wrapper">
+            <img src="images/jeu-société.jpg" alt="">
+            <img src="images/jeuxmaison.jpg" alt="">
+            <img src="images/jeux.jpg" alt="">
+        </div>
+        <form method="post">
+            <?php
+            // S'il y a une erreur sur le nom alors on affiche
+            if (isset($er_nom)) {
+            ?>
+            <div><?= $er_nom ?></div>
+            <?php
+            }
+            ?>
+            <label for="name">Nom</label>
+            <input id="name" type="text" placeholder="Votre nom" name="nom" value="<?php if (isset($nom)) {
+                echo $nom;
+            } ?>" required>
+            <?php
+            if (isset($er_prenom)) {
+            ?>
+            <div><?= $er_prenom ?></div>
+            <?php
+            }
+            ?>
+            <label for="prenom">Prénom</label>
+            <input id="prenom" type="text" placeholder="Votre prénom" name="prenom" value="<?php if (isset($prenom)) {
+                echo $prenom;
+            } ?>" required>
+            <?php
+            if (isset($er_mail)) {
+            ?>
+            <div><?= $er_mail ?></div>
+            <?php
+            }
+            ?>
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Adresse mail" name="mail" value="<?php if (isset($mail)) {
+                echo $mail;
+            } ?>" required>
+            <?php
+            if (isset($er_mdp)) {
+            ?>
+            <div><?= $er_mdp ?></div>
+            <?php
+            }
+            ?>
+            <label for="password">Mot de passe</label>
+            <input id="password" type="password" placeholder="Mot de passe" name="mdp" value="<?php if (isset($mdp)) {
+                 echo $mdp;
+            } ?>" required>
+            <label for="password">Confirmer le mot de passe</label>
+            <input type="password" placeholder="Confirmer le mot de passe" name="confmdp" required>
+            <button type="submit" name="inscription">Envoyer</button>
+        </form>
+        <script src="slider/slider.js"></script>
+        <script src="script/app.js"></script>
+    </body>
 
 </html>
