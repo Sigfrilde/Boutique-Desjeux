@@ -1,3 +1,14 @@
+.form-inscription{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid black;
+  width: 50%;
+  margin: 50px auto;
+  padding: 2em;
+  
+}
 
 
 /* Slider */
@@ -11,9 +22,10 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+
   }
   /* !je vais enlever la partie css pour les fleches pour le projet de la boutique */
-  .slider .arrow {
+  /* .slider .arrow {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,7 +47,7 @@
     top: 50%;
     right: 15px;
     color: red;
-  }
+  } */
   /* !fin des fleches */
 
   /* End of slider */

@@ -56,25 +56,25 @@ class Slider {
       this.createNextArrow();
     }
   // ! je vais enlever les fléches pour le projet de la boutique
-    createPrevArrow() {
-      const divPrevArrow = document.createElement("div");
-      divPrevArrow.innerText = "Prev";
-      divPrevArrow.classList.add("arrow");
-      divPrevArrow.classList.add("prev");
-      divPrevArrow.addEventListener("click", this.prev);
+    // createPrevArrow() {
+    //   const divPrevArrow = document.createElement("div");
+    //   divPrevArrow.innerText = "Prev";
+    //   divPrevArrow.classList.add("arrow");
+    //   divPrevArrow.classList.add("prev");
+    //   divPrevArrow.addEventListener("click", this.prev);
   
-      this.wrapper.appendChild(divPrevArrow);
-    }
+    //   this.wrapper.appendChild(divPrevArrow);
+    // }
   
-    createNextArrow() {
-      const divNextArrow = document.createElement("div");
-      divNextArrow.innerText = "Next";
-      divNextArrow.classList.add("arrow");
-      divNextArrow.classList.add("next");
-      divNextArrow.addEventListener("click", this.next);
+    // createNextArrow() {
+    //   const divNextArrow = document.createElement("div");
+    //   divNextArrow.innerText = "Next";
+    //   divNextArrow.classList.add("arrow");
+    //   divNextArrow.classList.add("next");
+    //   divNextArrow.addEventListener("click", this.next);
   
-      this.wrapper.appendChild(divNextArrow);
-    }
+    //   this.wrapper.appendChild(divNextArrow);
+    // }
     // !fin des creations de fleches
   
     prev = () => {
