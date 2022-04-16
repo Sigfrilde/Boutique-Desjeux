@@ -98,7 +98,7 @@ if (!empty($_POST)) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
-    <title>Inscription</title>
+    <title>Boutique Désjeux/inscription</title>
 </head>
 
 <body>
@@ -113,12 +113,7 @@ if (!empty($_POST)) {
         </nav>
         <img class="logo" src="images/DESJEUX.png" alt="Logo DESJEUX">
     </header>
-    <div class="slider wrapper">
-        <img src="images/jeu-société.jpg" alt="">
-        <img src="images/jeuxmaison.jpg" alt="">
-        <img src="images/jeux.jpg" alt="">
-    </div>
-    <h2>Formulaire d'inscription</h2>
+    <h2 class="formulaire-inscription">Formulaire d'inscription</h2>
     <form class="form-inscription" method="post">
         <?php
         // S'il y a une erreur sur le nom alors on affiche
@@ -183,8 +178,6 @@ if (!empty($_POST)) {
             <a href=""><span class="iconify" data-icon="logos:tiktok" data-inline="false"></span></a>
         </div>
     </footer>
-    <script src="slider/slider.js"></script>
-    <script src="script/app.js"></script>
 </body>
 
 </html>
