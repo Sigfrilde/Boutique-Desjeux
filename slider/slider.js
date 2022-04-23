@@ -6,8 +6,8 @@ class Slider {
         console.error("Bad wrapper !");
       }
   
-      this.width = 650;
-      this.height = 425;
+      this.width = 1500;
+      this.height = 650;
       this.currentSlide = 0;
       this.interval = 5000;
       this.loop = false;
