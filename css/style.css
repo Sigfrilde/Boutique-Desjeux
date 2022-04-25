@@ -3,12 +3,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+ 
 }
 body{
   font-size: 1.5em;
   font-family: 'Roboto', sans-serif;
   line-height: 1.3em;
   background: #ececec;
+  max-width: 100%;
 }
 li{
   list-style: none;
@@ -22,6 +24,7 @@ img{
 }
 .wrapper{
  width: 1500px;
+ margin: auto;
 }
 
 /* Header */
@@ -59,16 +62,7 @@ img{
 
 
 
-.form-inscription{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  border: 1px solid black;
-  width: 50%;
-  height: 400px;
-  margin: 20px auto;
-}
+
 /* End of page inscription */
 
 /* Slider */
